@@ -19,26 +19,19 @@ public class props {
 
 
     }
-   
 }
 
-// import java.io.*;
-// import java.util.*;
 
-// public class props {
-//     public static void main(String[] args) {
-//         Properties props = new Properties();
+// to load
+InputFileStream is = new InputFileStream("db.properties");
+Properties prop = new Properties;
+props.load(is);
+is.close();
 
-//         // Set properties 
-//         props.setProperty("database.username", "root");
-//         props.setProperty("database.password", "admin");
+//to store
+OutputFileStream os = new OutputFileStream("db.properties");
+Properties prop = new Properties;
+props.store (os,"database config");
+os.close();
 
-//         // Get properties 
-//         String user = props.getProperty("database.username");
-//         String pass = props.getProperty("database.password");
 
-//         // Print values
-//         System.out.println(user);  // Should print "root"
-//         System.out.println(pass);  // Should print "admin"
-//     }
-// }

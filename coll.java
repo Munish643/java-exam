@@ -1,4 +1,4 @@
-import java.util.ArrayList;//yeh ya ha 
+import java.util.ArrayList;//yeh kya  ha 
 import java.util.Collections;//or yeh bhi 
 
 public class coll {
